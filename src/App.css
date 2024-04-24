@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(101, 199, 115, 1) 0%, rgba(36, 189, 205, 1) 92%, rgba(0, 183, 255, 1) 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.home-wrapper .title {
+  font-size: 45px;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-wrapper .short-desc {
+  font-size: 20px;
+  margin-top: 20;
+}
+
+.story-wrapper {
+  font-size: 16px;
+  line-height: 35px;
+  padding: 31px;
+  border: 1px solid;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.story-wrapper span {
+  font-size: 22px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.speech {
+  width: 38px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: -40px;
+}
+
+.speech-wrapper{
+  position: relative;
+  width: 100%;
+}
+.reset{
+  right: 100px;
 }

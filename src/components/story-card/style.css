@@ -1,0 +1,54 @@
+.card-wrapper{
+ display: flex;
+ justify-content: center;
+ padding: 10px;
+}
+.story-card:not(:first-child){
+ margin-left: 20px;
+}
+.story-card {
+ width: 300px;
+ max-height: 300px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ border-radius: 10px;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ background-color: white;
+}
+
+.story-card-image {
+ height: 200px;
+ object-fit: cover;
+ border-top-right-radius: 10px;
+ border-top-left-radius: 10px;
+}
+
+.story-card-title {
+ font-size: 16px;
+ font-weight: bold;
+ text-align: center;
+}
+
+
+.btn-grad {
+ background-image: linear-gradient(to right, #3CA55C 0%, #B5AC49 51%, #3CA55C 100%);
+ padding: 5px;
+ text-align: center;
+ text-transform: uppercase;
+ transition: 0.5s;
+ background-size: 200% auto;
+ color: white;
+ box-shadow: 0 0 20px #eee;
+ display: block;
+ border: none;
+ cursor: pointer;
+ border-bottom-right-radius: 10px;
+ border-bottom-left-radius: 10px;
+}
+
+.btn-grad:hover {
+ background-position: right center;
+ color: #fff;
+ text-decoration: none;
+}
